@@ -17,14 +17,14 @@ public class MainActivity extends AppCompatActivity {
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle("House Rent");
         }
-//        Button buttonLogin =  findViewById(R.id.buttonLogin);
-//        buttonLogin.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent =  new Intent(MainActivity.this, LoginActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        Button buttonLogin =  findViewById(R.id.buttonLogin);
+        buttonLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =  new Intent(MainActivity.this, loginActivity.class);
+                startActivity(intent);
+            }
+        });
 
         Button buttonRegister = findViewById(R.id.buttonRegistration);
         buttonRegister.setOnClickListener(new View.OnClickListener() {
